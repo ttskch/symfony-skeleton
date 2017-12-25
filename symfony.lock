@@ -110,6 +110,9 @@
             "ref": "cc1afd81841db36fbef982fe56b48ade6716fac4"
         }
     },
+    "symfony/form": {
+        "version": "v4.0.2"
+    },
     "symfony/framework-bundle": {
         "version": "3.3",
         "recipe": {
@@ -123,6 +126,12 @@
         "version": "v4.0.2"
     },
     "symfony/http-kernel": {
+        "version": "v4.0.2"
+    },
+    "symfony/inflector": {
+        "version": "v4.0.2"
+    },
+    "symfony/intl": {
         "version": "v4.0.2"
     },
     "symfony/lts": {
@@ -149,6 +158,9 @@
             "ref": "c24944bd87dacf0bb8fa218dc21e4a70fff56882"
         }
     },
+    "symfony/options-resolver": {
+        "version": "v4.0.2"
+    },
     "symfony/phpunit-bridge": {
         "version": "3.3",
         "recipe": {
@@ -157,6 +169,9 @@
             "version": "3.3",
             "ref": "179470cb6492db92dffee208cfdb436f175c93b4"
         }
+    },
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.6.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.6.0"
@@ -170,6 +185,9 @@
     "symfony/profiler-pack": {
         "version": "v1.0.3"
     },
+    "symfony/property-access": {
+        "version": "v4.0.2"
+    },
     "symfony/routing": {
         "version": "4.0",
         "recipe": {
@@ -182,6 +200,15 @@
     "symfony/stopwatch": {
         "version": "v4.0.2"
     },
+    "symfony/translation": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "6bcd6c570c017ea6ae5a7a6a027c929fd3542cd8"
+        }
+    },
     "symfony/twig-bridge": {
         "version": "v4.0.2"
     },
@@ -193,6 +220,9 @@
             "version": "3.3",
             "ref": "f75ac166398e107796ca94cc57fa1edaa06ec47f"
         }
+    },
+    "symfony/validator": {
+        "version": "v4.0.2"
     },
     "symfony/var-dumper": {
         "version": "v4.0.2"
