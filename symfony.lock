@@ -56,6 +56,9 @@
             "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
         }
     },
+    "symfony/asset": {
+        "version": "v4.0.2"
+    },
     "symfony/cache": {
         "version": "v4.0.2"
     },

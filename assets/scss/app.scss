@@ -1,0 +1,10 @@
+@import "variables";
+@import "form";
+
+html[lang="ja"] body {
+    font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+#content {
+    min-height: 80vh;
+}
