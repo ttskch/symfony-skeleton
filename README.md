@@ -58,3 +58,7 @@ $ npm dev     # encore dev
 $ npm watch   # encore dev --watch
 $ npm build   # encore production
 ```
+
+### Translations
+
+For example, set `'ja'` to `parameters.locale` in `/config/services.yaml` and create the corresponding catalog as `/translations/messages.ja.yaml`.
