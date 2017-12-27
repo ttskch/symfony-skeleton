@@ -52,12 +52,15 @@
             "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "npm install"
         ],
         "post-update-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "npm install"
         ],
         "post-create-project-cmd": [
+            "@auto-scripts",
             "npm install"
         ]
     },

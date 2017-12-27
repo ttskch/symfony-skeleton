@@ -16,7 +16,6 @@ Encore
     .enableSourceMaps(!Encore.isProduction())
     .addEntry('js/app', './assets/js/app.js')
     .addEntry('css/app', './assets/scss/app.scss')
-    .addEntry('images', './assets/js/images.js')
     .createSharedEntry('js/vendors', [
         'jquery',
         'bootstrap',
