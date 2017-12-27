@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block subtitle %}Form Sample{% endblock %}
+
+{% block content %}
+    {% include 'widgets/tabs.html.twig' %}
+
+    <div class="row">
+        <div class="col-lg-6">
+            {{ form(form) }}
+        </div>
+    </div>
+{% endblock %}

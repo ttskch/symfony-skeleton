@@ -1,28 +1,20 @@
 @import "variables";
 
-.form-group > label {
-    &.required {
-        &:after {
-            content: " *";
-            color: $color-danger;
+.form-group {
+    // for form/layout
+    & > .form-control-label,
+    & > .col-form-legend,
+    // for form/horizontal_layout
+    & > .col-form-label,
+    & > .row > .col-form-legend {
+        &.required {
+            &:after {
+                content: " *";
+                color: $color-danger;
+            }
         }
     }
-}
-
-.form-control.form-control-unstyled {
-    padding: 0;
-    border: none;
-
-    .form-check.form-check-inline {
-        margin-bottom: 0;
-        margin-top: 0.2rem;
-    }
-
-    &.is-invalid {
-        color: $color-danger;
-    }
-
-    &.is-valid {
-        color: $color-success;
+    & .form-check-label[class$="-inline"]:not(:last-child) {
+        margin-right: 1em;
     }
 }
