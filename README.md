@@ -9,7 +9,8 @@ A skeleton to get started with Symfony which has following features.
 
 * bootstrap4 based templates
 * bootstrap4 based **beautiful** form themes
-* translation support
+* font-awesome ready
+* translation ready
 * scss support (via [symfony/webpack-encore](https://github.com/symfony/webpack-encore))
 
 ## Requirements
