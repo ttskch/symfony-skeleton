@@ -26,6 +26,25 @@ $ bin/console server:run
 
 Then browse http://localhost:8000
 
+### Switching form themes
+
+Rearrange `twig.form_themes` array elements to specify the default theme.
+
+```yaml
+# config/packages/twig.yaml
+twig:
+    form_themes:
+        - 'form/layout.html.twig'
+        - 'form/horizontal_layout.html.twig'  # to be the default theme
+```
+
+You can also set arbitrary form theme to a specific form like below.
+
+```twig
+{% form_theme form 'form/layout.html.twig' %}
+{{ form(form) }}
+```
+
 ## Development
 
 ### Scaffolding
@@ -51,7 +70,7 @@ Available commands for the "make" namespace:
 
 ### Assets
 
-All assets in `/assets` will be built with [Webpack Encore](http://symfony.com/doc/current/frontend.html) into `/public/build`.
+All assets in `assets` will be built with [Webpack Encore](http://symfony.com/doc/current/frontend.html) into `public/build`.
 
 ```bash
 $ npm dev     # encore dev
@@ -61,4 +80,4 @@ $ npm build   # encore production
 
 ### Translations
 
-For example, set `'ja'` to `parameters.locale` in `/config/services.yaml` and create the corresponding catalog as `/translations/messages.ja.yaml`.
+For example, set `'ja'` to `parameters.locale` in `config/services.yaml` and create the corresponding catalog as `translations/messages.ja.yaml`.

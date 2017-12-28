@@ -14,7 +14,12 @@
             }
         }
     }
+
     & .form-check-label[class$="-inline"]:not(:last-child) {
         margin-right: 1em;
+    }
+
+    & > .row > div[class^="col-"] {
+        padding-top: 0.375rem;
     }
 }
