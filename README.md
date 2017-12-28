@@ -1,5 +1,8 @@
 # symfony-micro-skeleton
 
+[![Latest Stable Version](https://poser.pugx.org/ttskch/symfony-micro-skeleton/v/stable)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
+[![Total Downloads](https://poser.pugx.org/ttskch/symfony-micro-skeleton/downloads)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
+
 ![image](https://user-images.githubusercontent.com/4360663/34398755-b821de44-ebc4-11e7-92c1-a6b6c2dcd5e9.png)
 
 A skeleton to get started with Symfony which has following features.
