@@ -1,2 +1,16 @@
-Send: '送信する'
-Form is submitted.: '送信が完了しました。'
+# alerts
+Form is submitted.: 送信が完了しました。
+
+# contact form
+Name: 名前
+Email: メールアドレス
+Gender: 性別
+Male: 男性
+Female: 女性
+Other: その他
+Interesting services: 興味のあるサービス
+Service A: サービスA
+Service B: サービスB
+Service C: サービスC
+Message: メッセージ
+Send: 送信する

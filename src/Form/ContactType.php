@@ -34,15 +34,10 @@ class ContactType extends AbstractType
             ])
             ->add('gender', ChoiceType::class, [
                 'choices' => $genderChoices = [
-                    'male' => 'male',
-                    'female' => 'female',
-                    'other' => 'other',
+                    'Male' => 'Male',
+                    'Female' => 'Female',
+                    'Other' => 'Other',
                 ],
-                'choice_attr' => function ($value, $key, $index) {
-                    return [
-                        'class' => 'form-check-inline',
-                    ];
-                },
                 'data' => 'male',
                 'expanded' => true,
                 'multiple' => false,
@@ -63,9 +58,9 @@ class ContactType extends AbstractType
                 ],
                 'expanded' => true,
                 'multiple' => true,
-                'label_attr' => [
-                    'class' => 'checkbox-inline',
-                ],
+//                'label_attr' => [
+//                    'class' => 'checkbox-inline',
+//                ],
             ])
             ->add('message', TextareaType::class, [
                 'attr' => [
