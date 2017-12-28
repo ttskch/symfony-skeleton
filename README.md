@@ -3,9 +3,9 @@
 A skeleton to get started with Symfony which has following features.
 
 * bootstrap4 based templates
-* bootstrap4 based form themes
+* bootstrap4 based **beautiful** form themes
 * translation support
-* scss support
+* scss support (via [symfony/webpack-encore](https://github.com/symfony/webpack-encore))
 
 ## Requirements
 
@@ -26,7 +26,7 @@ $ bin/console server:run
 
 Then browse http://localhost:8000
 
-### Switching form themes
+### Form themes
 
 Rearrange `twig.form_themes` array elements to specify the default theme.
 
