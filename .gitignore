@@ -1,4 +1,6 @@
 node_modules
+package-lock.json
+composer.lock
 
 ###> symfony/framework-bundle ###
 .env
