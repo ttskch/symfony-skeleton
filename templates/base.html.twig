@@ -14,8 +14,8 @@
     <meta name="description" content="{{ block('subtitle') }}">
     <link rel="canonical" href="{{ app.request.uri }}">
 
-    <link rel="apple-touch-icon" href="{{ asset('build/images/symfony-logo.png') }}" type="image/png">
-    <link rel="shortcut icon" href="{{ asset('build/images/symfony-logo.png') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ asset('build/images/logo.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('build/images/logo.png') }}" type="image/x-icon">
 
     <meta property="og:title" content="{{ block('title') }}">
     <meta property="og:type" content="website">
@@ -27,6 +27,7 @@
     <meta property="og:description" content="{{ block('subtitle') }}">
 
     <link href="{{ asset('build/vendors.css') }}" rel="stylesheet">
+
     {% block stylesheets %}
         <link href="{{ asset('build/app.css') }}" rel="stylesheet">
     {% endblock %}
@@ -37,7 +38,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ path('home_index') }}">
-                <img src="{{ asset('build/images/symfony-logo.png') }}" alt="Logo" width="25" height="25" class="mr-1">
+                <img src="{{ asset('build/images/logo.png') }}" alt="Logo" width="25" height="25" class="mr-1">
                 <span>{{ block('site_title') }}</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-1">
