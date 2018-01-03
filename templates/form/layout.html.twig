@@ -1,8 +1,0 @@
-{% extends 'bootstrap_4_layout.html.twig' %}
-
-
-{%- block submit_widget -%}
-    {%- set type = type|default('submit') -%}
-    {%- set attr = attr|merge({class: (attr.class|default('btn-outline-primary') ~ ' btn')|trim}) -%}
-    {{- parent() -}}
-{%- endblock submit_widget -%}

@@ -251,6 +251,9 @@
     "symfony/yaml": {
         "version": "v4.0.2"
     },
+    "ttskch/bs4-form-theme-adjuster-bundle": {
+        "version": "dev-master"
+    },
     "twig/twig": {
         "version": "v2.4.4"
     }

@@ -26,8 +26,9 @@
     <meta property="fb:app_id" content="">
     <meta property="og:description" content="{{ block('subtitle') }}">
 
+    <link href="{{ asset('build/vendors.css') }}" rel="stylesheet">
     {% block stylesheets %}
-        <link href="{{ asset('build/css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/app.css') }}" rel="stylesheet">
     {% endblock %}
 </head>
 
@@ -81,10 +82,10 @@
     </div>
 
     <script src="{{ asset('build/manifest.js') }}"></script>
-    <script src="{{ asset('build/js/vendors.js') }}"></script>
+    <script src="{{ asset('build/vendors.js') }}"></script>
 
     {% block javascripts %}
-        <script src="{{ asset('build/js/app.js') }}"></script>
+        <script src="{{ asset('build/app.js') }}"></script>
     {% endblock %}
 {% endblock body %}
 </body>

@@ -14,13 +14,17 @@ Encore
     .enablePostCssLoader()
     .enableVersioning()
     .enableSourceMaps(!Encore.isProduction())
-    .addEntry('js/app', './assets/js/app.js')
-    .addEntry('css/app', './assets/scss/app.scss')
-    .createSharedEntry('js/vendors', [
+    .addEntry('app', [
+        './assets/js/app.js',
+        './assets/scss/app.scss',
+    ])
+    .createSharedEntry('vendors', [
         'jquery',
         'bootstrap',
         'popper.js',
         'select2',
+        './public/bundles/ttskchbs4formthemeadjuster/js/form.js',
+        './public/bundles/ttskchbs4formthemeadjuster/scss/form.scss',
     ])
     .addPlugin(new copyPlugin([{
         from: './assets/images',

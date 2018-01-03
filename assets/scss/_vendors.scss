@@ -1,0 +1,10 @@
+// customize font-awesome
+$fa-font-path: "~font-awesome/fonts";
+
+// customize bootstrap
+//$font-size-base: 0.875rem;
+html { font-size: 14px; }   // font-size of html will be the base font-size because of "$font-size-base:1rem"
+
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+@import "~select2/dist/css/select2";
