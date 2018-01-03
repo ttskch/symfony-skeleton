@@ -38,15 +38,12 @@ class ContactType extends AbstractType
                     'Female' => 'Female',
                     'Other' => 'Other',
                 ],
-                'data' => 'male',
-                'expanded' => true,
+                'placeholder' => 'Please select',
+                'expanded' => false,
                 'multiple' => false,
                 'constraints' => [
                     new Assert\NotBlank(),
                     new Assert\Choice(array_keys($genderChoices)),
-                ],
-                'label_attr' => [
-                    'class' => 'radio-inline',
                 ],
             ])
             ->add('interesting_services', ChoiceType::class, [
@@ -58,9 +55,9 @@ class ContactType extends AbstractType
                 ],
                 'expanded' => true,
                 'multiple' => true,
-//                'label_attr' => [
-//                    'class' => 'checkbox-inline',
-//                ],
+                'label_attr' => [
+                    'class' => 'checkbox-inline',
+                ],
             ])
             ->add('message', TextareaType::class, [
                 'attr' => [
