@@ -28,3 +28,4 @@ services:
     # please note that last definitions always *replace* previous ones
 
     Symfony\Component\Translation\TranslatorInterface: '@translator.default'
+    Symfony\Component\HttpFoundation\Session\SessionInterface: '@session'
