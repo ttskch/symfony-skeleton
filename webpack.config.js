@@ -25,8 +25,6 @@ Encore
         'select2',
         // styles
         './assets/scss/vendors.scss',
-        './public/bundles/ttskchbs4formthemeadjuster/js/form.js',
-        './public/bundles/ttskchbs4formthemeadjuster/scss/form.scss',
     ])
     .addPlugin(new copyPlugin([{
         from: './assets/images',

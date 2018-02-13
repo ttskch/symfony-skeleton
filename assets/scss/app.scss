@@ -1,4 +1,5 @@
 @import "variables";
+@import "form-theme";
 
 html {
     // font-size of html will be the base font-size because of "$font-size-base:1rem"
@@ -7,11 +8,15 @@ html {
     // for beauty in Japanese env
     &[lang="ja"] body {
         font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.05em;
         color: #444;
     }
 }
 
 #content {
     min-height: 80vh;
+}
+
+#footer {
+    border-top: 1px solid darken($light, 10%);
 }

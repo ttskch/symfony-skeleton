@@ -3,14 +3,15 @@
 [![Latest Stable Version](https://poser.pugx.org/ttskch/symfony-micro-skeleton/v/stable)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
 [![Total Downloads](https://poser.pugx.org/ttskch/symfony-micro-skeleton/downloads)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
 
-![image](https://user-images.githubusercontent.com/4360663/34398755-b821de44-ebc4-11e7-92c1-a6b6c2dcd5e9.png)
+![image](https://user-images.githubusercontent.com/4360663/36159671-9efd28dc-1122-11e8-9f3f-ecde16b58e07.png)
 
 A skeleton to get started with Symfony which has following features.
 
 * bootstrap4 based templates
-* bootstrap4 based **beautiful** form themes
+* bootstrap4 based beautiful form themes
 * font-awesome ready
 * translation ready
+* [select2](https://github.com/select2/select2) and [bootstrap4 theme](https://github.com/ttskch/select2-bootstrap4-theme) ready
 * scss support (via [symfony/webpack-encore](https://github.com/symfony/webpack-encore))
 
 ## Requirements
