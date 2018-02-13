@@ -38,7 +38,11 @@ class ContactType extends AbstractType
                     'Female' => 'Female',
                     'Other' => 'Other',
                 ],
-                'placeholder' => 'Please select',
+                'placeholder' => 'Please select', // just to add no-value option
+                'attr' => [
+                    'placeholder' => 'Please select',
+                    'data-allow_clear' => 1,
+                ],
                 'expanded' => false,
                 'multiple' => false,
                 'constraints' => [

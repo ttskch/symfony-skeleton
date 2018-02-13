@@ -1,7 +1,15 @@
 @import "variables";
 
-html[lang="ja"] body {
-    font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+html {
+    // font-size of html will be the base font-size because of "$font-size-base:1rem"
+    font-size: 14px;
+
+    // for beauty in Japanese env
+    &[lang="ja"] body {
+        font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+        letter-spacing: 0.1em;
+        color: #444;
+    }
 }
 
 #content {

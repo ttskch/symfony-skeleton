@@ -8,7 +8,6 @@ Encore
     .autoProvidejQuery()
     .autoProvideVariables({
         Popper: ['popper.js', 'default'],
-
     })
     .enableSassLoader()
     .enablePostCssLoader()
@@ -19,10 +18,13 @@ Encore
         './assets/scss/app.scss',
     ])
     .createSharedEntry('vendors', [
+        // js
         'jquery',
         'bootstrap',
         'popper.js',
         'select2',
+        // styles
+        './assets/scss/vendors.scss',
         './public/bundles/ttskchbs4formthemeadjuster/js/form.js',
         './public/bundles/ttskchbs4formthemeadjuster/scss/form.scss',
     ])
