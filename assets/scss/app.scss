@@ -8,8 +8,11 @@ html {
     // for beauty in Japanese env
     &[lang="ja"] body {
         font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-        letter-spacing: 0.05em;
         color: #444;
+    }
+
+    * {
+        letter-spacing: 0.03em;
     }
 }
 
