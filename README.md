@@ -48,7 +48,7 @@ twig:
 You can also set arbitrary form theme to a specific form like below.
 
 ```twig
-{% form_theme form 'form/layout.html.twig' %}
+{% form_theme form 'form_theme/your_own_form_theme.html.twig' %}
 {{ form(form) }}
 ```
 
