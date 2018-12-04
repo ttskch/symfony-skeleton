@@ -11,13 +11,13 @@ Encore
     })
     .enableSassLoader()
     .enablePostCssLoader()
-    .enableVersioning()
+    .enableVersioning(Encore.isProduction())
     .enableSourceMaps(!Encore.isProduction())
     .addEntry('app', [
         './assets/js/app.js',
         './assets/scss/app.scss',
     ])
-    .createSharedEntry('vendors', [
+    .addEntry('vendors', [
         // js
         'jquery',
         'bootstrap',
@@ -26,10 +26,12 @@ Encore
         // styles
         './assets/scss/vendors.scss',
     ])
-    .addPlugin(new copyPlugin([{
+    .splitEntryChunks()
+    .enableSingleRuntimeChunk()
+    .copyFiles({
         from: './assets/images',
-        to: 'images',
-    }]))
+        to: 'images/[path][name].[ext]',
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();

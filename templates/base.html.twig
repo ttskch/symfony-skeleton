@@ -26,10 +26,10 @@
     <meta property="fb:app_id" content="">
     <meta property="og:description" content="{{ block('subtitle') }}">
 
-    <link href="{{ asset('build/vendors.css') }}" rel="stylesheet">
+    {{ encore_entry_link_tags('vendors') }}
 
     {% block stylesheets %}
-        <link href="{{ asset('build/app.css') }}" rel="stylesheet">
+        {{ encore_entry_link_tags('app') }}
     {% endblock %}
 </head>
 
@@ -90,11 +90,10 @@
         {% endblock %}
     </div>
 
-    <script src="{{ asset('build/manifest.js') }}"></script>
-    <script src="{{ asset('build/vendors.js') }}"></script>
+    {{ encore_entry_script_tags('vendors') }}
 
     {% block javascripts %}
-        <script src="{{ asset('build/app.js') }}"></script>
+        {{ encore_entry_script_tags('app') }}
     {% endblock %}
 {% endblock body %}
 </body>
