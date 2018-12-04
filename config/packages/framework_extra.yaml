@@ -1,0 +1,4 @@
+# @see https://nebojsa.in.rs/symfony-deprecated-route-and-method-annotations/
+sensio_framework_extra:
+    router:
+        annotations: false
