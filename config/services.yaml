@@ -27,5 +27,5 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    Symfony\Component\Translation\TranslatorInterface: '@translator.default'
+    Symfony\Contracts\Translation\TranslatorInterface: '@translator'
     Symfony\Component\HttpFoundation\Session\SessionInterface: '@session'
