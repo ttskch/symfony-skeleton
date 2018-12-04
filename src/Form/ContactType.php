@@ -72,7 +72,7 @@ class ContactType extends AbstractType
                 'expanded' => true,
                 'multiple' => true,
                 'attr' => [
-                    'inline' => true,
+                    'class' => 'form-check-inline',
                 ],
             ])
             ->add('message', TextareaType::class, [
