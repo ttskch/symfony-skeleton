@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/ttskch/symfony-micro-skeleton/v/stable)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
 [![Total Downloads](https://poser.pugx.org/ttskch/symfony-micro-skeleton/downloads)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
 
-![image](https://user-images.githubusercontent.com/4360663/36159671-9efd28dc-1122-11e8-9f3f-ecde16b58e07.png)
+![image](https://user-images.githubusercontent.com/4360663/49428912-8e809700-f7ea-11e8-9d99-a6d261d857bd.png)
 
 A skeleton to get started with Symfony which has following features.
 
@@ -41,8 +41,8 @@ Rearrange `twig.form_themes` array elements to specify the default theme.
 # config/packages/twig.yaml
 twig:
     form_themes:
-#        - 'form_theme/bootstrap_4_layout.html.twig'
-        - 'form_theme/bootstrap_4_horizontal_layout.html.twig'
+        - 'bootstrap_4_layout.html.twig'
+#        - 'form_theme/bootstrap_4_horizontal_layout.html.twig'   # to be the default theme
 ```
 
 You can also set arbitrary form theme to a specific form like below.
