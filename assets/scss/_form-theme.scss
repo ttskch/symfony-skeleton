@@ -7,8 +7,8 @@
     > .row > .col-form-label {
         font-weight: bolder;
 
-        &.required:after {
-            content: " *";
+        &.required:before {
+            content: "* ";
             color: $danger;
         }
     }
@@ -21,5 +21,4 @@
             padding-left: 0;
         }
     }
-
 }
