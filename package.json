@@ -6,7 +6,7 @@
     "postinstall": "npm run build"
   },
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.22.2",
+    "@symfony/webpack-encore": "^0.26.0",
     "@ttskch/select2-bootstrap4-theme": "^1.0.4",
     "autoprefixer": "^9.4.0",
     "bootstrap": "^4.1.3",
