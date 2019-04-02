@@ -80,9 +80,9 @@ Available commands for the "make" namespace:
 All assets in `assets` will be built with [Webpack Encore](http://symfony.com/doc/current/frontend.html) into `public/build`.
 
 ```bash
-$ npm dev     # encore dev
-$ npm watch   # encore dev --watch
-$ npm build   # encore production
+$ npm run dev     # encore dev
+$ npm run watch   # encore dev --watch
+$ npm run build   # encore production
 ```
 
 ### Translations
