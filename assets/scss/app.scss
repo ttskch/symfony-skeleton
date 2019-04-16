@@ -2,24 +2,24 @@
 @import "form-theme";
 
 html {
-    // font-size of html will be the base font-size because of "$font-size-base:1rem"
-    font-size: 14px;
+  // font-size of html will be the base font-size because of "$font-size-base:1rem"
+  font-size: 14px;
 
-    // for beauty in Japanese env
-    &[lang="ja"] body {
-        font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-        color: #444;
-    }
+  // for beauty in Japanese env
+  &[lang="ja"] body {
+    font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    color: #444;
+  }
 
-    * {
-        letter-spacing: 0.03em;
-    }
+  * {
+    letter-spacing: 0.03em;
+  }
 }
 
 #content {
-    min-height: 80vh;
+  min-height: 80vh;
 }
 
 #footer {
-    border-top: 1px solid darken($light, 10%);
+  border-top: 1px solid darken($light, 10%);
 }

@@ -1,29 +1,29 @@
 @import "variables";
 
 .form-group {
-    > label,
-    > .col-form-label,
-    // for horizontal
-    > .row > .col-form-label {
-        font-weight: bolder;
+  > label,
+  > .col-form-label,
+  // for horizontal
+  > .row > .col-form-label {
+    font-weight: bolder;
 
-        &.required:before {
-            content: "* ";
-            color: $danger;
-        }
+    &.required:before {
+      content: "* ";
+      color: $danger;
     }
+  }
 
-    // beautify inline checkboxes/radios
-    .form-check-inline {
-        margin-top: 0.4em;
+  // beautify inline checkboxes/radios
+  .form-check-inline {
+    margin-top: 0.4em;
 
-        > .form-check:first-child {
-            padding-left: 0;
-        }
+    > .form-check:first-child {
+      padding-left: 0;
     }
+  }
 
-    .custom-file-label {
-        color: $text-muted;
-        overflow: hidden;
-    }
+  .custom-file-label {
+    color: $text-muted;
+    overflow: hidden;
+  }
 }
