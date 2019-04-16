@@ -1,4 +1,5 @@
 import 'select2';
+import bsCustomFileInput from 'bs-custom-file-input';
 
 // somehow this doesn't work...
 // @see https://select2.org/configuration/data-attributes
@@ -19,3 +20,4 @@ $('select[autofocus]').select2('focus');
 
 $('[data-toggle="tooltip"]').tooltip();
 
+bsCustomFileInput.init();

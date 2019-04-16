@@ -21,4 +21,9 @@
             padding-left: 0;
         }
     }
+
+    .custom-file-label {
+        color: $text-muted;
+        overflow: hidden;
+    }
 }
