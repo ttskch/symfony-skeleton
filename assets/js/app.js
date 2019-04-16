@@ -15,4 +15,7 @@ $('select').each(function () {
     });
 });
 
+$('select[autofocus]').select2('focus');
+
 $('[data-toggle="tooltip"]').tooltip();
+
