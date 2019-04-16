@@ -1,5 +1,4 @@
 const Encore = require('@symfony/webpack-encore');
-const copyPlugin = require('copy-webpack-plugin');
 
 Encore
     .setOutputPath('public/build/')
@@ -22,7 +21,6 @@ Encore
         'jquery',
         'bootstrap',
         'popper.js',
-        'select2',
         // styles
         './assets/scss/vendors.scss',
     ])
