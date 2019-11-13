@@ -23,6 +23,7 @@
         "symfony/yaml": "4.2.*"
     },
     "require-dev": {
+        "phpmd/phpmd": "^2.7",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/test-pack": "*",
@@ -68,7 +69,9 @@
         "post-create-project-cmd": [
             "@auto-scripts",
             "npm install"
-        ]
+        ],
+        "test": ["bin/phpunit"],
+        "phpmd": ["vendor/bin/phpmd src,tests text ./phpmd.xml"]
     },
     "conflict": {
         "symfony/symfony": "*"
