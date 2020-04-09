@@ -3,14 +3,13 @@
 [![Latest Stable Version](https://poser.pugx.org/ttskch/symfony-micro-skeleton/v/stable)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
 [![Total Downloads](https://poser.pugx.org/ttskch/symfony-micro-skeleton/downloads)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
 
-![image](https://user-images.githubusercontent.com/4360663/49428912-8e809700-f7ea-11e8-9d99-a6d261d857bd.png)
+![image](https://user-images.githubusercontent.com/4360663/78899178-f6ff1880-7aaf-11ea-96af-7e5a0931c41d.png)
 
 A skeleton to get started with Symfony which has following features.
 
 * bootstrap4 based templates
 * bootstrap4 based beautiful form themes
 * font-awesome ready
-* translation ready
 * [select2](https://github.com/select2/select2) and [bootstrap4 theme](https://github.com/ttskch/select2-bootstrap4-theme) ready
 * scss support (via [symfony/webpack-encore](https://github.com/symfony/webpack-encore))
 
@@ -86,7 +85,3 @@ $ npm run dev     # encore dev
 $ npm run watch   # encore dev --watch
 $ npm run build   # encore production
 ```
-
-### Translations
-
-For example, set `'ja'` to `parameters.locale` in `config/services.yaml` and create the corresponding catalog as `translations/messages.ja.yaml`.

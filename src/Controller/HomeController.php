@@ -7,7 +7,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * @Route("/", name="home_")
@@ -25,13 +24,13 @@ class HomeController extends AbstractController
     /**
      * @Route("/form", name="form")
      */
-    public function form(Request $request, TranslatorInterface $translator)
+    public function form(Request $request)
     {
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $this->addFlash('success', $translator->trans('Form is submitted.'));
+            $this->addFlash('success', 'Form is submitted.');
 
             return $this->redirectToRoute('home_form');
         }
