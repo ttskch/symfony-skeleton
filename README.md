@@ -28,8 +28,10 @@ $ composer create-project ttskch/symfony-micro-skeleton:@dev {project-name}
 ## Usage
 
 ```bash
-$ bin/console server:run
+$ symfony server:start
 ```
+
+> If you don't have [symfony command](https://symfony.com/doc/current/setup/symfony_server.html) first [install it](https://symfony.com/download). 
 
 Then browse http://localhost:8000
 
