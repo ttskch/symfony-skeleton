@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ app.request.locale }}">
+<html lang="{{ app.request.locale }}" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         {%- block title %}
             {%- block subtitle %}{% endblock -%}
@@ -11,20 +11,31 @@
             {%- block site_title %}Symfony Micro Skeleton{% endblock -%}
         {% endblock -%}
     </title>
-    <meta name="description" content="{{ block('subtitle') }}">
-    <link rel="canonical" href="{{ app.request.uri }}">
+    <meta name="description" content="{% block description %}{{ block('subtitle') }}{% endblock %}">
+    <link rel="canonical" href="{% block canonical %}{{ app.request.uri }}{% endblock %}">
 
     <link rel="apple-touch-icon" href="{{ asset('build/images/logo.png') }}" type="image/png">
     <link rel="shortcut icon" href="{{ asset('build/images/logo.png') }}" type="image/x-icon">
 
+    {# @see https://ogp.me/ #}
+    {# required #}
     <meta property="og:title" content="{{ block('title') }}">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ absolute_url(asset('build/images/logo.png')) }}">
-    <meta property="og:url" content="{{ app.request.uri }}">
-    <meta property="og:site_name" content="{{ block('title') }}">
-    <meta property="fb:admins" content="">
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}{{ absolute_url(asset('build/images/logo.png')) }}{% endblock %}">
+    <meta property="og:url" content="{{ block('canonical') }}">
     <meta property="fb:app_id" content="">
-    <meta property="og:description" content="{{ block('subtitle') }}">
+    {# optional #}
+    <meta property="og:description" content="{{ block('description') }}">
+    <meta property="og:site_name" content="{{ block('title') }}">
+
+    {# @see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started #}
+    {# required #}
+    <meta name="twitter:card" content="summary_large_image">
+    {# optional #}
+    <meta name="twitter:site" content="@xxx">
+    <meta name="twitter:card" content="@xxx">
+
+    {% block meta %}{% endblock %}
 
     {{ encore_entry_link_tags('vendors') }}
 

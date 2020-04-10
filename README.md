@@ -7,6 +7,7 @@
 
 A skeleton to get started with Symfony which has following features.
 
+* OGP ready
 * bootstrap4 based templates
 * bootstrap4 based beautiful form themes
 * font-awesome ready
