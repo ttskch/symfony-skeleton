@@ -1,5 +1,5 @@
 twig:
-    paths: ['%kernel.project_dir%/templates']
+    default_path: '%kernel.project_dir%/templates'
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     form_themes:
@@ -7,4 +7,4 @@ twig:
         - 'form_theme/bootstrap_4_horizontal_layout.html.twig'   # to be the default theme
 
     # @see https://github.com/symfony/symfony/blob/master/UPGRADE-4.4.md#twigbundle
-    exception_controller: ~
+    exception_controller: null
