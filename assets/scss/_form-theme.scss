@@ -31,6 +31,10 @@
   .custom-file-label {
     color: $text-muted;
     overflow: hidden;
+    &:after {
+      // uncomment and tweak to change 'Browse' label
+      //content: 'Browse files' !important;
+    }
   }
 
   .invalid-feedback {
