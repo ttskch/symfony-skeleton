@@ -32,6 +32,12 @@
     "nikic/php-parser": {
         "version": "v4.1.0"
     },
+    "pdepend/pdepend": {
+        "version": "2.5.2"
+    },
+    "phpmd/phpmd": {
+        "version": "2.7.0"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
