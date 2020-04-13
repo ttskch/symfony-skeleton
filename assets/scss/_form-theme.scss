@@ -7,9 +7,15 @@
   > .row > .col-form-label {
     font-weight: bolder;
 
-    &.required:before {
-      content: "* ";
-      color: $danger;
+    &.required:after {
+      content: "required";
+      margin-left: 0.8em;
+      font-size: 0.5em;
+      font-weight: normal;
+      padding: 0.3em 0.5em;
+      border-radius: 3px;
+      color: $white;
+      background-color: $danger;
     }
   }
 
@@ -25,5 +31,9 @@
   .custom-file-label {
     color: $text-muted;
     overflow: hidden;
+  }
+
+  .invalid-feedback {
+    margin-bottom: 0.5em;
   }
 }

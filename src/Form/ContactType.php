@@ -44,6 +44,7 @@ class ContactType extends AbstractType
                 'attr' => [
                     'data-placeholder' => 'Please select',
                     'data-allow-clear' => 'true',
+                    'class' => 'w-100',
                 ],
                 'expanded' => false,
                 'multiple' => false,
