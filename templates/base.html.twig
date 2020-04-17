@@ -44,7 +44,7 @@
     {% endblock %}
 </head>
 
-<body>
+<body class="bg-light">
 {% block body %}
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
@@ -73,10 +73,11 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div id="content" class="my-3 mb-5">
-            {% block flashes %}
-                {% if app.session.flashbag.peekAll|length > 0 %}
+
+    <div id="content" class="bg-white py-3">
+        {% block flashes %}
+            {% if app.session.flashbag.peekAll|length > 0 %}
+                <div class="container-fluid">
                     {% for type, messages in app.session.flashbag.all %}
                         {% for message in messages %}
                             <div class="alert alert-{{ type }} alert-dismissible" role="alert">
@@ -85,21 +86,21 @@
                             </div>
                         {% endfor %}
                     {% endfor %}
-                {% endif %}
-            {% endblock %}
-
-            {% block content %}
-            {% endblock %}
-        </div>
-
-        {% block footer %}
-            <footer id="footer" class="py-4">
-                <div class="text-center">
-                    <a href="http://ttskch.github.io" target="_blank"><b>ttskch</b></a> &copy; 20xx / <a href="https://github.com/ttskch/xxx" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
-            </footer>
+            {% endif %}
+        {% endblock %}
+
+        {% block content %}
         {% endblock %}
     </div>
+
+    <footer id="footer" class="container-fluid">
+        {% block footer %}
+            <div class="small text-muted text-right py-3">
+                <a href="http://ttskch.github.io" target="_blank" class="text-muted"><b>ttskch</b></a> &copy; {{ 'now'|date('Y') }} / <a href="https://github.com/ttskch/xxx" target="_blank" class="text-muted"><i class="fab fa-github"></i></a>
+            </div>
+        {% endblock %}
+    </footer>
 
     {{ encore_entry_script_tags('vendors') }}
 
