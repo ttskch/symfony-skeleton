@@ -5,6 +5,12 @@ html {
   // font-size of html will be the base font-size because of "$font-size-base:1rem"
   font-size: 14px;
 
+  // if base font-size is smaller than 16px and you removed "user-scalable=0" from base.html.twig, then this style is recommended to avoid zooming into input elements on smartphone view
+  // @see https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone
+  //.form-control {
+  //  font-size: 16px !important;
+  //}
+
   // for beauty in Japanese env
   &[lang="ja"] body {
     font-family: "Lato", Emoji, Arial, "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
