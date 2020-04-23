@@ -1,6 +1,6 @@
 {
-    "name": "ttskch/symfony-micro-skeleton",
-    "description": "A skeleton to get started with Symfony",
+    "name": "ttskch/symfony-skeleton",
+    "description": "A skeleton to get started with Symfony and Bootstrap4",
     "type": "project",
     "license": "MIT",
     "require": {

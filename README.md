@@ -1,15 +1,15 @@
-# symfony-micro-skeleton
+# symfony-skeleton
 
-[![Latest Stable Version](https://poser.pugx.org/ttskch/symfony-micro-skeleton/v/stable)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
-[![Total Downloads](https://poser.pugx.org/ttskch/symfony-micro-skeleton/downloads)](https://packagist.org/packages/ttskch/symfony-micro-skeleton)
+[![Latest Stable Version](https://poser.pugx.org/ttskch/symfony-skeleton/v/stable)](https://packagist.org/packages/ttskch/symfony-skeleton)
+[![Total Downloads](https://poser.pugx.org/ttskch/symfony-skeleton/downloads)](https://packagist.org/packages/ttskch/symfony-skeleton)
 
 ![image](https://user-images.githubusercontent.com/4360663/79084901-58094380-7d71-11ea-895c-e74674d3d269.png)
 
 A skeleton to get started with Symfony which has following features.
 
 * OGP ready
-* bootstrap4 based templates
-* bootstrap4 based beautiful form themes
+* Bootstrap4 based templates
+* Bootstrap4 based beautiful form themes
 * font-awesome ready
 * [select2](https://github.com/select2/select2) and [bootstrap4 theme](https://github.com/ttskch/select2-bootstrap4-theme) ready
 * scss support (via [symfony/webpack-encore](https://github.com/symfony/webpack-encore))
@@ -22,7 +22,7 @@ A skeleton to get started with Symfony which has following features.
 ## Installation
 
 ```bash
-$ composer create-project ttskch/symfony-micro-skeleton:@dev {project-name}
+$ composer create-project ttskch/symfony-skeleton:@dev {project-name}
 ```
 
 ## Usage
