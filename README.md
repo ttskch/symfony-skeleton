@@ -43,14 +43,14 @@ Rearrange `twig.form_themes` array elements to specify the default theme.
 # config/packages/twig.yaml
 twig:
     form_themes:
-        - 'form-theme/bootstrap_4_layout.html.twig'
-#        - 'form-theme/bootstrap_4_horizontal_layout.html.twig'   # to be the default theme
+        - 'form_theme/bootstrap_4_layout.html.twig'
+#        - 'form_theme/bootstrap_4_horizontal_layout.html.twig'   # to be the default theme
 ```
 
 You can also set arbitrary form theme to a specific form like below.
 
 ```twig
-{% form_theme form 'form-theme/your_own_form_theme.html.twig' %}
+{% form_theme form 'form_theme/your_own_form_theme.html.twig' %}
 {{ form(form) }}
 ```
 

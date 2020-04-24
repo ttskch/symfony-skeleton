@@ -3,8 +3,8 @@ twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     form_themes:
-        - 'form-theme/bootstrap_4_layout.html.twig'
-        - 'form-theme/bootstrap_4_horizontal_layout.html.twig' # to be the default theme
+        - 'form_theme/bootstrap_4_layout.html.twig'
+        - 'form_theme/bootstrap_4_horizontal_layout.html.twig' # to be the default theme
 
     # @see https://github.com/symfony/symfony/blob/master/UPGRADE-4.4.md#twigbundle
     exception_controller: null
