@@ -18,12 +18,14 @@ import bsCustomFileInput from 'bs-custom-file-input';
 // @see https://select2.org/configuration/data-attributes
 // $('select').select2({
 //   theme: 'bootstrap4',
-//   width: '100%',
+//   width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+//   placeholder: $(this).data('placeholder'),
+//   allowClear: Boolean($(this).data('allow-clear')) || false,
 // });
 $('select').each(function () {
   $(this).select2({
     theme: 'bootstrap4',
-    width: $(this).hasClass('w-100') ? '100%' : 'style',
+    width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
     placeholder: $(this).data('placeholder'),
     allowClear: Boolean($(this).data('allow-clear')) || false,
   });
