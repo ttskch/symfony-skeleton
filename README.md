@@ -101,4 +101,10 @@ All assets in `assets` will be built with [Webpack Encore](http://symfony.com/do
 $ npm run dev     # encore dev
 $ npm run watch   # encore dev --watch
 $ npm run build   # encore production
+
+# or
+
+$ yarn dev
+$ yarn watch
+$ yarn build
 ```
