@@ -86,8 +86,8 @@ Encore
   })
   .enablePostCssLoader()
   .copyFiles({
-    from: './assets/images',
-    to: 'images/[path][name].[ext]',
+    from: './assets/statics/',
+    to: '/[path][name].[ext]',
   })
 ;
 
