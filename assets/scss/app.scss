@@ -20,10 +20,18 @@ html {
   * {
     letter-spacing: 0.03em;
   }
+
+  scroll-padding-top: $body-padding-top + $content-padding-top;
+}
+
+body {
+  padding-top: $body-padding-top;
 }
 
 #content {
   min-height: 80vh;
+  padding-top: $content-padding-top;
+  padding-bottom: $content-padding-bottom;
 }
 
 #footer {
