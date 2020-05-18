@@ -32,6 +32,10 @@ body {
   min-height: 80vh;
   padding-top: $content-padding-top;
   padding-bottom: $content-padding-bottom;
+
+  summary {
+    outline: none;
+  }
 }
 
 #footer {
