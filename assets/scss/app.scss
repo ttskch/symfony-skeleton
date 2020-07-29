@@ -1,5 +1,5 @@
-@import "variables";
-@import "form-theme";
+@import 'variables';
+@import 'form';
 
 html {
   // font-size of html will be the base font-size because of "$font-size-base:1rem"
@@ -32,11 +32,11 @@ body {
   min-height: 80vh;
   padding-top: $content-padding-top;
   padding-bottom: $content-padding-bottom;
-
-  summary {
-    outline: none;
-  }
 }
 
 #footer {
+}
+
+summary {
+  outline: none;
 }

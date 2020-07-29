@@ -2,14 +2,10 @@
 
 {% block subtitle %}Form Sample{% endblock %}
 
-{% block content %}
-  <div class="container-fluid">
-    {% include 'widgets/tabs.html.twig' %}
+{% block content_container %}
+  {% include 'widgets/tabs.html.twig' %}
 
-    <div class="row">
-      <div class="col-12 col-lg-9 col-xl-6">
-        {{ form(form) }}
-      </div>
-    </div>
+  <div class="container ml-0">
+    {{ form(form) }}
   </div>
 {% endblock %}
