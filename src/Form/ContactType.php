@@ -6,6 +6,7 @@ namespace App\Form;
 
 //use App\Entity\Contact;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -33,6 +34,13 @@ class ContactType extends AbstractType
                 'constraints' => [
                     new Assert\NotBlank(),
                     new Assert\Email(),
+                ],
+            ])
+            ->add('news_letters', CheckboxType::class, [
+                'required' => false,
+                'label_attr' => [
+                    'value' => 'Subscribe',
+                    'class' => 'checkbox-inline',
                 ],
             ])
             ->add('gender', ChoiceType::class, [
