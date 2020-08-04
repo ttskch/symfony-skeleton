@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/ttskch/symfony-skeleton/v/stable)](https://packagist.org/packages/ttskch/symfony-skeleton)
 [![Total Downloads](https://poser.pugx.org/ttskch/symfony-skeleton/downloads)](https://packagist.org/packages/ttskch/symfony-skeleton)
 
-![image](https://user-images.githubusercontent.com/4360663/79084901-58094380-7d71-11ea-895c-e74674d3d269.png)
+![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghesk53dd1j315p0u0h6a.jpg)
 
 A skeleton to get started with Symfony which has following features.
 
@@ -58,8 +58,8 @@ You can also set arbitrary form theme to a specific form like below.
 
 | | before sending | with errors |
 | --- | --- | --- |
-| **horizontal** | ![image](https://user-images.githubusercontent.com/4360663/79084901-58094380-7d71-11ea-895c-e74674d3d269.png) | ![image](https://user-images.githubusercontent.com/4360663/79085082-1e850800-7d72-11ea-829a-011ef36c2d09.png) |
-| **vertical** | ![image](https://user-images.githubusercontent.com/4360663/79085111-38bee600-7d72-11ea-81ee-4d15b039b2ac.png) | ![image](https://user-images.githubusercontent.com/4360663/79085149-5b50ff00-7d72-11ea-8649-a042217bb8a9.png) |
+| **horizontal** | ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghesk53dd1j315p0u0h6a.jpg) | ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1gheskd4hkvj315p0u0avv.jpg) |
+| **vertical** | ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghesjxu8d2j315p0u0qnm.jpg) | ![](https://tva1.sinaimg.cn/large/007S8ZIlgy1ghesjqo1yrj315p0u0e1n.jpg) |
 
 ## Development
 
