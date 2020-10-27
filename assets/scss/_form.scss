@@ -41,3 +41,21 @@
     margin-bottom: 0.5em;
   }
 }
+
+// beautify checkboxes/radios in Japanese environment
+html[lang="ja"] {
+  .form-group {
+    .form-check {
+      input[type="checkbox"] {
+        margin-top: 0.23rem;
+      }
+    }
+    .form-check-inline {
+      .form-check {
+        input[type="checkbox"] {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
