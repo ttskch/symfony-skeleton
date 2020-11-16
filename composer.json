@@ -54,10 +54,6 @@
         "symfony/polyfill-php56": "*"
     },
     "scripts": {
-        "start": [
-            "Composer\\Config::disableProcessTimeout",
-            "php -c php.ini -S 0.0.0.0:8000 -t public"
-        ],
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
